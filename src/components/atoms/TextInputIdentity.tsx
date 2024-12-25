@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { Input } from "@nextui-org/react";
-import { IdCard } from "lucide-react";
+// import { IdCard } from "lucide-react";
 
 interface ITextInputIdentity {
   placeholder?: string;
@@ -41,13 +41,13 @@ const TextInputIdentity: React.FC<ITextInputIdentity> = ({
       type="text"
       radius="sm"
       label={label ? label : undefined}
-      startContent={
-        <div className="h-full -ml-2 flex items-center justify-center">
-          <div className="h-full flex items-center justify-center px-2 border-r-3 border-white">
-            <IdCard size={20} />
-          </div>
-        </div>
-      }
+      // startContent={
+      //   <div className="h-full -ml-2 flex items-center justify-center">
+      //     <div className="h-full flex items-center justify-center px-2 border-r-3 border-white">
+      //       <IdCard size={20} />
+      //     </div>
+      //   </div>
+      // }
       endContent={
         <div className="flex items-center">
           <select

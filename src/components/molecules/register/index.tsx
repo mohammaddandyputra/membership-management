@@ -1,3 +1,5 @@
-import CardFormRegister from "./CardFormRegister";
+import FormProfileData from "./FormProfileData";
+import FormMembershipType from "./FormMembershipType";
+import RegistrationSuccessWithBarcode from "./RegistrationSuccessWithBarcode";
 
-export { CardFormRegister };
+export { FormProfileData, FormMembershipType, RegistrationSuccessWithBarcode };

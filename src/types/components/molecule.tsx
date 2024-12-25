@@ -13,11 +13,24 @@ export interface IFormLabel {
   errors?: string;
 }
 
-export interface ICardFormRegister {
-  data: Record<string, any>;
+export interface IFormProfileData {
+  payload: Record<string, any>;
   validation: Validation;
-  handleChangePayload?: (
+  handleChangeStep: (value: string) => void;
+  handleChangePayload: (
     property: string,
     value: string | number | boolean | null
   ) => void;
+}
+
+export interface IFormMembershipList {
+  data: Record<string, any>[];
+  payload: Record<string, any>;
+  validation: Validation;
+  handleChangeStep: (value: string) => void;
+  handleChangePayload: (
+    property: string,
+    value: string | number | boolean | null
+  ) => void;
+  handleSubmit: () => Promise<void>;
 }

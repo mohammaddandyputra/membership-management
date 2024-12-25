@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Input } from "@nextui-org/react";
-import { Phone } from "lucide-react";
 import { ITextInputPhoneNumber } from "@/types/components/atom";
 
 const TextInputPhoneNumber = ({
@@ -28,13 +27,13 @@ const TextInputPhoneNumber = ({
       type="text"
       radius="sm"
       label={label ? label : undefined}
-      startContent={
-        <div className="h-full -ml-2 flex items-center justify-center">
-          <div className="h-full flex items-center justify-center px-2 border-r-3 border-white">
-            <Phone size={20} />
-          </div>
-        </div>
-      }
+      // startContent={
+      //   <div className="h-full -ml-2 flex items-center justify-center">
+      //     <div className="h-full flex items-center justify-center px-2 border-r-3 border-white">
+      //       <Phone size={20} />
+      //     </div>
+      //   </div>
+      // }
       placeholder={placeholder}
       value={value}
       onChange={handleChangeValue}
